@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RAU-2y-3De" customClass="HomeTableViewHeader" customModule="Ting_Ting" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="e8e-gG-lkS">
+                    <rect key="frame" x="0.0" y="16" width="414" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwJ-9u-z5a">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="45"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
+                            <state key="normal" title="Pizza">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="pizzaButtonAction:" destination="RAU-2y-3De" eventType="touchUpInside" id="LEU-Db-DLF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zd-Bt-PVq">
+                            <rect key="frame" x="138" y="0.0" width="138" height="45"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
+                            <state key="normal" title="Sushi">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="sushiButtonAction:" destination="RAU-2y-3De" eventType="touchUpInside" id="epA-cd-v8h"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFr-Th-Yd5">
+                            <rect key="frame" x="276" y="0.0" width="138" height="45"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="27"/>
+                            <state key="normal" title="Drinks">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="DrinksButtonAction:" destination="RAU-2y-3De" eventType="touchUpInside" id="Ws2-sI-MgV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filters" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FD5-Vu-6CA">
+                    <rect key="frame" x="24" y="72.5" width="54" height="23"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="19"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6V2-st-EKO">
+                    <rect key="frame" x="102" y="71.5" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="LA6-cA-Eim"/>
+                        <constraint firstAttribute="height" constant="25" id="nMa-B8-XGU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Spicy">
+                        <color key="titleColor" white="0.84823774480000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.84823774480000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vca-1f-5WQ">
+                    <rect key="frame" x="196" y="71.5" width="70" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="OpO-gx-BQp"/>
+                        <constraint firstAttribute="height" constant="25" id="fbT-X4-Zvn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="Vegan">
+                        <color key="titleColor" white="0.84823774480000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.76028037559999995" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ung-9Y-2ha"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vca-1f-5WQ" firstAttribute="centerY" secondItem="FD5-Vu-6CA" secondAttribute="centerY" id="5G0-dV-GzF"/>
+                <constraint firstItem="ung-9Y-2ha" firstAttribute="bottom" secondItem="FD5-Vu-6CA" secondAttribute="bottom" constant="14.5" id="8Tf-LX-UrJ"/>
+                <constraint firstItem="6V2-st-EKO" firstAttribute="leading" secondItem="FD5-Vu-6CA" secondAttribute="trailing" constant="24" id="Mlm-1C-1CR"/>
+                <constraint firstAttribute="trailing" secondItem="e8e-gG-lkS" secondAttribute="trailing" id="UEq-X2-8eJ"/>
+                <constraint firstItem="e8e-gG-lkS" firstAttribute="top" secondItem="RAU-2y-3De" secondAttribute="top" constant="16" id="bMq-0M-FhD"/>
+                <constraint firstItem="6V2-st-EKO" firstAttribute="centerY" secondItem="FD5-Vu-6CA" secondAttribute="centerY" id="gnA-CH-KWM"/>
+                <constraint firstItem="e8e-gG-lkS" firstAttribute="leading" secondItem="RAU-2y-3De" secondAttribute="leading" id="m8n-5t-AhE"/>
+                <constraint firstItem="FD5-Vu-6CA" firstAttribute="leading" secondItem="ung-9Y-2ha" secondAttribute="leading" constant="24" id="pZl-13-qhU"/>
+                <constraint firstItem="FD5-Vu-6CA" firstAttribute="top" secondItem="e8e-gG-lkS" secondAttribute="bottom" constant="11.5" id="tCY-HA-U5i"/>
+                <constraint firstItem="vca-1f-5WQ" firstAttribute="leading" secondItem="6V2-st-EKO" secondAttribute="trailing" constant="24" id="wnv-Pv-nKP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-242" y="63"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
